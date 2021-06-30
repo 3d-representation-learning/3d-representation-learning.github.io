@@ -27,7 +27,7 @@
 
 <body>
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-		<a class="navbar-brand" href="#">Going Beyond Images: 3D-Aware Representation Learning for Visuomotor Control</a>
+		<a class="navbar-brand" href="#">3D Neural Scene Representations for Visuomotor Control</a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
 	  		<span class="navbar-toggler-icon"></span>
@@ -57,12 +57,11 @@
 	<div class="container" style="padding-top: 80px; font-size: 20px">
 		<div align="center">
 			<h2 class="text-center" align="center">
-				Going Beyond Images: <br>
-				3D-Aware Representation Learning for Visuomotor Control
+				3D Neural Scene Representations for Visuomotor Control
 			</h2><br>
 
 			<a href="http://people.csail.mit.edu/liyunzhu/">Yunzhu Li</a>* &nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="http://www.mit.edu/~lishuang/">Shuang Li</a>* &nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://people.csail.mit.edu/lishuang/">Shuang Li</a>* &nbsp;&nbsp;&nbsp;&nbsp;
 			<a href="https://vsitzmann.github.io/">Vincent Sitzmann</a> &nbsp;&nbsp;&nbsp;&nbsp;
 			<a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a> &nbsp;&nbsp;&nbsp;&nbsp;
 			<a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a><br><br>
@@ -77,7 +76,7 @@
 	<div class="container" style="padding-top: 20px; font-size: 20px">
 		<div align="center">
 		<div class="center">
-			<img class="img-responsive img-rounded" src="imgs/quali_control_v2_process.png" style="width:90%; height:100%" alt="">
+			<img class="img-responsive img-rounded" src="imgs/quali_control_process.jpg" style="width:90%; height:100%" alt="">
 		</div>
 		</div>
 	</div><br><br>
@@ -86,7 +85,7 @@
 	<!-- Abstract -->
 	<div class="container">
 		<h3 id="Abstract" style="padding-top: 80px; margin-top: -80px;">Abstract</h3>
-		Humans have a strong intuitive understanding of the 3D environment around us. The intuitive physics engine in our brain applies to objects of different materials and enables us to perform a wide range of manipulation tasks that are far beyond the reach of current robots. In this work, we desire to learn models for dynamic 3D scenes purely from 2D visual observations. Our model combines Neural Radiance Fields (NeRF) and time contrastive learning with an autoencoding framework, which learns viewpoint-invariant 3D-aware scene representations. We show that a dynamics model, constructed over the learned representation space, enables visuomotor control for challenging manipulation tasks involving both rigid bodies and fluids, where the target is specified in a viewpoint different from what the robot operates on. When coupled with an auto-decoding framework, it can support goal specification from a viewpoint outside the training distribution. The learned dynamics model also allows future prediction and novel view synthesis. We also provide detailed ablation studies regarding different system designs as well as an analysis of the learned representations, which we hope can inspire future works on building better visual dynamics modeling for complicated 3D scenes.
+		Humans have a strong intuitive understanding of the 3D environment around us. The mental model of the physics in our brain applies to objects of different materials and enables us to perform a wide range of manipulation tasks that are far beyond the reach of current robots. In this work, we desire to learn models for dynamic 3D scenes purely from 2D visual observations. Our model combines Neural Radiance Fields (NeRF) and time contrastive learning with an autoencoding framework, which learns viewpoint-invariant 3D-aware scene representations. We show that a dynamics model, constructed over the learned representation space, enables visuomotor control for challenging manipulation tasks involving both rigid bodies and fluids, where the target is specified in a viewpoint different from what the robot operates on. When coupled with an auto-decoding framework, it can even support goal specification from camera viewpoints that are outside the training distribution. We further demonstrate the richness of the learned 3D dynamics model by performing future prediction and novel view synthesis. Finally, we provide detailed ablation studies regarding different system designs and qualitative analysis of the learned representations.
 	</div><br><br>
 
 	<!-- Paper -->
@@ -96,7 +95,7 @@
 		<div class="row">
 			<div class="col-md-12">
 		  <a href="http://people.csail.mit.edu/liyunzhu/">Yunzhu Li</a>*,
-			<a href="http://www.mit.edu/~lishuang/">Shuang Li</a>*,
+			<a href="https://people.csail.mit.edu/lishuang/">Shuang Li</a>*,
 			<a href="https://vsitzmann.github.io/">Vincent Sitzmann</a>,
 			<a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a>, and
 			<a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a><br>
@@ -120,35 +119,28 @@
 		<div align="left">
 			<h4 style="padding-top: 80px; margin-top: -80px;">1. Goal specification in viewpoints different from the agent's view</h4>
 		  <div class="embed-responsive embed-responsive-16by9">
-		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://www.youtube.com/embed/fGw7PbL8z3M" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div><br><br>
-
-    <div align="left">
-			<h4 style="padding-top: 80px; margin-top: -80px;">2. More control results in FluidPour and FluidShake</h4>
-		  <div class="embed-responsive embed-responsive-16by9">
-		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://www.youtube.com/embed/nYXg-SgKGyE" frameborder="0" allowfullscreen></iframe>
+		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://www.youtube.com/embed/boKF-q6qofQ" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div><br><br>
 
 		<div align="left">
-			<h4 style="padding-top: 80px; margin-top: -80px;">3. Nearest neighbor search</h4>
+			<h4 style="padding-top: 80px; margin-top: -80px;">2. Nearest neighbor search</h4>
 		  <div class="embed-responsive embed-responsive-16by9">
-		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://www.youtube.com/embed/QOqUNvDBy5g" frameborder="0" allowfullscreen></iframe>
+		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://www.youtube.com/embed/GFkb1x6Oxgo" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div><br><br>
 
 		<div align="left">
-			<h4 style="padding-top: 80px; margin-top: -80px;">4. Future prediction and novel view synthesis</h4>
+			<h4 style="padding-top: 80px; margin-top: -80px;">3. Future prediction and novel view synthesis</h4>
 		  <div class="embed-responsive embed-responsive-16by9">
-		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://www.youtube.com/embed/atdT8iNLGIM" frameborder="0" allowfullscreen></iframe>
+		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://www.youtube.com/embed/QXiNAAqSOqs" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div><br><br>
 
 		<div align="left">
-			<h4 style="padding-top: 80px; margin-top: -80px;">5. Autodecoding test-time optimization</h4>
+			<h4 style="padding-top: 80px; margin-top: -80px;">4. Autodecoding test-time optimization</h4>
 		  <div class="embed-responsive embed-responsive-16by9">
-		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://www.youtube.com/embed/a6-Uhjd8lj4" frameborder="0" allowfullscreen></iframe>
+		    <iframe style="border: 1px solid #000;" class="embed-responsive-item" src="https://www.youtube.com/embed/nckvx1S7-cw" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div><br><br>
 
@@ -162,12 +154,12 @@
 
 		<h4 style="padding-top: 80px; margin-top: -80px;">1. Overview of the training procedure</h4>
 		<br>
-	  <img class="img-responsive img-rounded" src="imgs/model_v3_train.png" style="width:100%; height:100%" alt="">
+	  <img class="img-responsive img-rounded" src="imgs/model_train.jpg" style="width:100%; height:100%" alt="">
 		<br><br><br>
 
 		<h4 style="padding-top: 80px; margin-top: -80px;">2. Forward prediction and viewpoint extrapolation</h4>
 		<br>
-	  <img class="img-responsive img-rounded" src="imgs/model_v3_test.png" style="width:100%; height:100%" alt="">
+	  <img class="img-responsive img-rounded" src="imgs/model_test.png" style="width:100%; height:100%" alt="">
 	</div><br>
 
 
